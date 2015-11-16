@@ -74,7 +74,6 @@ figure {
     height: 100%;
     padding: 2em;
     color: #fff;
-    text-transform: uppercase;
     font-size: 1em; }
   figure figcaption > a {
     z-index: 1000;
@@ -91,10 +90,10 @@ figure {
     figure.effect-zoom-color p {
       -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
       transition: opacity 0.35s, transform 0.35s;
-      margin-top: 45%;
+      margin-top: 30%;
       padding: 1.5em;
       letter-spacing: 1px;
-      text-align: center;
+      text-align: left;
       text-transform: none;
       font-size: 1.1em;
       opacity: 0;
@@ -105,6 +104,7 @@ figure {
     figure.effect-zoom-color h2 {
       opacity: 0;
       padding: 0;
+      text-align: left;
       -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
       transition: opacity 0.35s, transform 0.35s;
       -webkit-transform: scale3d(0.8, 0.8, 1);
@@ -116,6 +116,49 @@ figure {
       -webkit-transform: scale3d(0.9, 0.9, 1);
       transform: scale3d(0.9, 0.9, 1); }
     figure.effect-zoom-color:hover p, figure.effect-zoom-color:hover h2 {
+      opacity: 1;
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1); }
+  figure.effect-zoom-color-border {
+    background: -webkit-linear-gradient(180deg, #dc686f 0%, #f16e48 100%);
+    background: linear-gradient(180deg, #dc686f 0%, #f16e48 100%); }
+    figure.effect-zoom-color-border img {
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s; }
+    figure.effect-zoom-color-border p {
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      position: absolute;
+      text-align: center;
+      bottom: 0;
+      left: 0;
+      margin: 20px;
+      padding: 30px;
+      border: 2px solid #fff;
+      text-transform: none;
+      font-size: 1em;
+      letter-spacing: 1px;
+      opacity: 0;
+      -webkit-transform: scale3d(0.8, 0.8, 1);
+      transform: scale3d(0.8, 0.8, 1);
+      -webkit-transform-origin: 50% -100%;
+      transform-origin: 50% -100%; }
+    figure.effect-zoom-color-border h2 {
+      padding: 0;
+      opacity: 0;
+      margin-top: -10px;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: scale3d(0.8, 0.8, 1);
+      transform: scale3d(0.8, 0.8, 1);
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      font-size: 2em; }
+    figure.effect-zoom-color-border:hover img {
+      opacity: 0.04;
+      -webkit-transform: scale3d(1.1, 1.1, 1);
+      transform: scale3d(1.1, 1.1, 1); }
+    figure.effect-zoom-color-border:hover p, figure.effect-zoom-color-border:hover h2 {
       opacity: 1;
       -webkit-transform: scale3d(1, 1, 1);
       transform: scale3d(1, 1, 1); }
