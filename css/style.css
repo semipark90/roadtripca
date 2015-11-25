@@ -242,7 +242,7 @@ b {
   position: fixed;
   top: 20px;
   left: 20px;
-  z-index: 1;
+  z-index: 12000;
   width: 36px;
   height: 36px;
   box-sizing: border-box;
@@ -281,6 +281,7 @@ span:nth-child(2) {
 
 .nav-toggle {
   position: fixed;
+  z-index: 11000;
   width: 83px;
   top: 0;
   bottom: 0;
@@ -304,15 +305,15 @@ span:nth-child(2) {
     margin: 0;
     list-style: none;
     padding: 0; }
-  .menu li {
-    padding-top: 0;
-    font-size: 20px;
-    color: white; }
-  .menu ul li a {
-    display: block;
-    text-decoration: none; }
-  .menu ul li a:hover {
-    color: green;
-    background-color: #6b6868; }
+    .menu ul li {
+      padding-top: 0;
+      font-size: 20px;
+      color: white; }
+      .menu ul li a {
+        display: block;
+        text-decoration: none; }
+        .menu ul li a:hover {
+          color: green;
+          background-color: #6b6868; }
 
 /*# sourceMappingURL=style.css.map */
