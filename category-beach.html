@@ -22,7 +22,33 @@
 </head>
 <body>
 	<!-- Codrops code: http://tympanus.net/codrops/2013/05/02/fixed-background-scrolling-layout/ -->
+	<div class="toggle-main">
+		<b href=#>
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</b>
+		<div class="nav-toggle">
+			<div class="menu">
+				<ul>
+					<li class="hidden"><a href="#"><img src="img/a.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/b.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/c.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/a.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/b.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/c.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/a.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/b.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/c.svg"></a></li>
+				</ul>
+			</div><!-- .menu -->
+		</div><!-- .nav-toggle -->
+	</div><!-- .toggle-main -->
+	<code>
+  	clicking on "b" toggles class "open" on "b"
+	</code>
 	<div id="cbp-fbscroller" class="cbp-fbscroller">
+	
 		<nav>
 			<a href="#fbsection1" class="cbp-fbcurrent">Section 1</a>
 			<a href="#fbsection2">Section 2</a>
@@ -53,6 +79,8 @@
 			$(function() {
 				cbpFixedScrollLayout.init();
 			});
+		</script>
+		<script src="js/b.js">
 		</script>
 </body>
 </html>
