@@ -24,26 +24,31 @@
 </head>
 <body>
 	<!-- Codrops code: http://tympanus.net/codrops/2013/05/02/fixed-background-scrolling-layout/ -->
-	<div class="menu_trigger">
-
-    <input type="checkbox" id="nav-trigger" class="nav-trigger">
-	<label for="nav-trigger" onclick="" ontouchstart="" class="on" style="transform: translateX(-80px);"></label>
-
-
-		<ul class="navigation">
-			<li class="nav-item"><a href="#"><img src="img/a.svg"></a></li>
-			<li class="nav-item"><a href="#"><img src="img/b.svg"></a></li>
-			<li class="nav-item"><a href="#"><img src="img/c.svg"></a></li>
-			<li class="nav-item"><a href="#"><img src="img/a.svg"></a></li>
-			<li class="nav-item"><a href="#"><img src="img/b.svg"></a></li>
-			<li class="nav-item"><a href="#"><img src="img/c.svg"></a></li>
-			<li class="nav-item"><a href="#"><img src="img/a.svg"></a></li>
-			<li class="nav-item"><a href="#"><img src="img/b.svg"></a></li>
-			<li class="nav-item"><a href="#"><img src="img/c.svg"></a></li>
-		</ul>
-	</div>
-	
-
+	<div class="toggle-main">
+		<b href=#>
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</b>
+		<div class="nav-toggle">
+			<div class="menu">
+				<ul>
+					<li class="hidden"><a href="#"><img src="img/a.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/b.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/c.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/a.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/b.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/c.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/a.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/b.svg"></a></li>
+					<li class="hidden"><a href="#"><img src="img/c.svg"></a></li>
+				</ul>
+			</div><!-- .menu -->
+		</div><!-- .nav-toggle -->
+	</div><!-- .toggle-main -->
+	<code>
+  	clicking on "b" toggles class "open" on "b"
+	</code>
 	<div id="cbp-fbscroller" class="cbp-fbscroller">
 	
 		<nav>
@@ -59,7 +64,6 @@
 		<section id="fbsection4"></section>
 		<section id="fbsection5"></section>
 	</div>
-
 	<!-- Bootstrap Javascript from CDN -->
 	<!-- Jquery is necessary before using javascript for bootstrap -->
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -78,8 +82,5 @@
 				cbpFixedScrollLayout.init();
 			});
 		</script>
-		<script src="js/classie.js"></script>
-		<script src="js/sidebarEffects.js"></script>
-		
 </body>
 </html>
