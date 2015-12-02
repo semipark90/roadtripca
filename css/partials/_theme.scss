@@ -265,6 +265,8 @@ figure {
 	background-image: url("http://placehold.it/2400x1080/3e788b/ffffff");
 }
 
+
+
 /////////////////////////////////////////
 #cali-map{
 	background-color: $teal;
@@ -339,7 +341,7 @@ span:nth-child(2) {
   transform: none;
 }
 
-.hidden {
+.hidden_1 {
   width: 80px;
   float: left;
   fill: white;
@@ -348,29 +350,29 @@ span:nth-child(2) {
 
 .menu {
   margin-top: 60px;
-  /*background-color: red;*/
- //  ul {
-	//   margin: 0;
-	//   list-style: none;
-	//   padding: 0;
-	// }
+  background-color: red;
+  ul {
+	  margin: 0;
+	   list-style: none;
+	  padding: 0;
+	 }
 
-	// li {
-	//   padding-top: 0;
-	//   font-size: 20px;
-	//   color: white; 
+	 li {
+   padding-top: 0;
+	  font-size: 20px;
+	  color: white; 
 
-	// }
-	// ul li a {
-	//   display: block;
-	//   text-decoration: none;
-	// }
+	 }
+	 ul li a {
+	   display: block;
+	  text-decoration: none;
+	 }
 
-	// ul li a:hover {
+	 ul li a:hover {
 
-	// color: green;
-	// background-color: #6b6868;
-	// }
+	 color: green;
+	 background-color: #6b6868;
+	 }
 }
 .side-navigation{
 	width: 80px;
