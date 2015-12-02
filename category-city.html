@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Roadtrip California, Sunny Beaches</title>
+
+	<!-- Typekit font - Museo Slab for Headline & Museo Sans Rounded for bodycopy -->
+	<script src="https://use.typekit.net/dbk3mqr.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script src="js/b.js">
+		</script>
+
+	<!-- Google fonts for secondary uses. Arvo for headline & Nuneto for bodycopy -->
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+
+	<!-- this is the main bootstrap cdn -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<!-- these is the optional bootstrap theme cdn -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+</head>
+<body>
+	<!-- Codrops code: http://tympanus.net/codrops/2013/05/02/fixed-background-scrolling-layout/ -->
+	<div class="toggle-main">
+		<b href=#>
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</b>
+		<div class="nav-toggle">
+			<div class="menu">
+				<ul>
+					<li class="hidden_1"><a href="#"><img src="img/a.svg"></a></li>
+					<li class="hidden_1"><a href="#"><img src="img/b.svg"></a></li>
+					<li class="hidden_1"><a href="#"><img src="img/c.svg"></a></li>
+					<li class="hidden_1"><a href="#"><img src="img/a.svg"></a></li>
+					<li class="hidden_1"><a href="#"><img src="img/b.svg"></a></li>
+					<li class="hidden_1"><a href="#"><img src="img/c.svg"></a></li>
+					<li class="hidden_1"><a href="#"><img src="img/a.svg"></a></li>
+					<li class="hidden_1"><a href="#"><img src="img/b.svg"></a></li>
+					<li class="hidden_1"><a href="#"><img src="img/c.svg"></a></li>
+				</ul>
+			</div><!-- .menu -->
+		</div><!-- .nav-toggle -->
+	</div><!-- .toggle-main -->
+	<code>
+  	clicking on "b" toggles class "open" on "b"
+	</code>
+
+	<div id="cbp-fbscroller" class="cbp-fbscroller">
+	
+		<nav>
+			<a href="#ctsection1" class="cbp-fbcurrent">Section 1</a>
+			<a href="#ctsection2">Section 2</a>
+			<a href="#ctsection3">Section 3</a>
+			<a href="#ctsection4">Section 4</a>
+			<a href="#ctsection5">Section 5</a>
+		</nav>
+		<section id="ctsection1"></section>
+		<section id="ctsection2"></section>
+		<section id="ctsection3"></section>
+		<section id="ctsection4"></section>
+		<section id="ctsection5"></section>
+	</div>
+
+	<!-- Bootstrap Javascript from CDN -->
+	<!-- Jquery is necessary before using javascript for bootstrap -->
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>	
+	<!-- Custom Javascript -->
+	<script src="js/main.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+		<!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
+		<script src="js/waypoints.min.js"></script>
+		<!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
+		<script src="js/jquery.debouncedresize.js"></script>
+		<!-- Codrops Javascript for fixed background parallax -->
+		<script src="js/cbpFixedScrollLayout.min.js"></script>
+		<script>
+			$(function() {
+				cbpFixedScrollLayout.init();
+			});
+		</script>
+		<script src="js/classie.js"></script>
+		<script src="js/sidebarEffects.js"></script>
+		
+</body>
+</html>
