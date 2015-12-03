@@ -601,3 +601,13 @@ label[for="nav-trigger"] {
     -ms-transition: 500ms opacity;
     transition: 500ms opacity;
 }
+
+body.open .transparent-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0, 0.7);
+	z-index: 10;
+}
