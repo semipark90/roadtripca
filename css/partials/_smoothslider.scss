@@ -9,9 +9,7 @@
   text-align: center;
   height: 100vh;
   color: rgba(255, 255, 255, 0.9);
-}
-
-.sect-banner:after {
+  &:after{
     content: '';
     position: absolute;
     top: 0;
@@ -19,34 +17,33 @@
     height: 100%;
     width: 100%;
     // background: rgba(118, 144, 164, 0.4);
-    z-index: 0; }
-  
-
-  .sect-banner .v-center {
+    z-index: 0; 
+  }
+  .v-center{
     position: relative;
-    z-index: 2; }
-  
-  .sect-banner .v-center {
+    // z-index: 2;
     display: table-cell;
     vertical-align: middle;
     position: relative;
     z-index: 4;
-    padding: 0 5%; }
-    
-    .sect-banner ul{
-    	padding: 0;
-    }
-    
-    .sect-banner .v-center h1 {
-      -webkit-animation: fade-in ease-in-out 2s 0.5s both;
+    padding: 0 5%;
+    h1{
+        -webkit-animation: fade-in ease-in-out 2s 0.5s both;
       -moz-animation: fade-in ease-in-out 2s 0.5s both;
-      animation: fade-in ease-in-out 2s 0.5s both; }
-    
-    .sect-banner .v-center p {
-      font-size: 120%;
+      animation: fade-in ease-in-out 2s 0.5s both;
+    }
+    p{
+       font-size: 120%;
       -webkit-animation: fade-in ease-in-out 2s 1s both;
       -moz-animation: fade-in ease-in-out 2s 1s both;
-      animation: fade-in ease-in-out 2s 1s both; }
+      animation: fade-in ease-in-out 2s 1s both; 
+    }
+  }
+  ul{
+    padding:0;
+  }
+}
+
   
   .sect-banner ul.kf-slider li {
     height: 100% !important;
@@ -61,7 +58,9 @@
     -webkit-animation: fade-out 9s infinite both;
     -moz-animation: fade-out 9s infinite both;
     animation: fade-out 9s infinite both;
-    background-image: url(../img/banner-1-sm.jpg); }
+    background-image: url(../img/banner-1-sm.jpg); 
+  }
+  
     @media (min-width: 58em) {
       .sect-banner ul.kf-slider li {
         background-image: url(../img/banner-1.jpg); } }
