@@ -7,8 +7,8 @@
 	<!-- Typekit font - Museo Slab for Headline & Museo Sans Rounded for bodycopy -->
 	<script src="https://use.typekit.net/dbk3mqr.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	<script src="js/b.js">
-		</script>
+	<!-- <script src="js/b.js">
+		</script> -->
 
 	<!-- Google fonts for secondary uses. Arvo for headline & Nuneto for bodycopy -->
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
@@ -25,7 +25,7 @@
 <body>
 	<!-- Codrops code: http://tympanus.net/codrops/2013/05/02/fixed-background-scrolling-layout/ -->
 	<div class="toggle-main">
-		<b href=#>
+		<b href="#" class="b">
 		  <span></span>
 		  <span></span>
 		  <span></span>
@@ -33,7 +33,7 @@
 		<div class="nav-toggle">
 			<div class="menu">
 				<ul>
-					<li class="hidden_1"><a href="#"><img src="img/a.svg"></a></li>
+					<li class="hidden_1"><a href="#">Home</a></li>
 					<li class="hidden_1"><a href="#"><img src="img/b.svg"></a></li>
 					<li class="hidden_1"><a href="#"><img src="img/c.svg"></a></li>
 					<li class="hidden_1"><a href="#"><img src="img/a.svg"></a></li>
@@ -46,9 +46,9 @@
 			</div><!-- .menu -->
 		</div><!-- .nav-toggle -->
 	</div><!-- .toggle-main -->
-	<code>
+	<!-- <code>
   	clicking on "b" toggles class "open" on "b"
-	</code>
+	</code> -->
 
 	<div id="cbp-fbscroller" class="cbp-fbscroller">
 	
@@ -82,10 +82,17 @@
 		<script>
 			$(function() {
 				cbpFixedScrollLayout.init();
+				$(".b").on("click",function(e){
+					e.preventDefault();
+					$("body").addClass("open");
+				});
+				$(".cbp-fbscroller").on("click",function(){
+					if($("body").hasClass("open")) $("body").removeClass("open");
+				})
 			});
 		</script>
-		<script src="js/classie.js"></script>
+		<!-- <script src="js/classie.js"></script>
 		<script src="js/sidebarEffects.js"></script>
-		
+		-->
 </body>
 </html>

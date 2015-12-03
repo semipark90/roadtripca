@@ -285,10 +285,10 @@ footer {
 ////////////////////////////////////////
 // Toggle Nav Left from Chrys
 
-b {
+.b {
   position: fixed;
   top: 20px;
-  left: 20px;
+  left: 100px;
   z-index: 12000;
   width: 36px;
   height: 36px;
@@ -298,6 +298,10 @@ b {
   border: 1px solid rgba(0,40,60,.2);
   tap-highlight-color: transparent;
   cursor: pointer;
+  //background-color: white;
+  opacity: 1;
+  -webkit-transition:opacity 0.3s;
+  transition:opacity 0.3s;
 
 }
 span {
@@ -307,26 +311,21 @@ span {
   background: rgb(0,40,60);
   transition: .7s;
   pointer-events: none;
+  background-color: white;
 }
 span:nth-child(2) {
   margin: 3px 0;
 }
-.open {
-  border-color: rgba(255,255,255,.2);
+
+
+.hidden_1 {
+  width: 80px;
+  float: left;
+  fill: white;
+  border-bottom: 1px solid white;
 }
-.open span {
-  background: #fff;
-}
-.open :first-child {
-  transform: translateY(5px) rotate(-45deg);
-}
-.open :nth-child(2) {
-  transform: rotate(-45deg);
-  opacity: 0;
-}
-.open :last-child {
-  transform: translateY(-5px) rotate(-135deg);
-}
+
+
 .nav-toggle {
   position: fixed;
   z-index: 11000;
@@ -338,20 +337,21 @@ span:nth-child(2) {
   transform: translateX(-100%);
   transition: .5s;
 }
-.open + .nav-toggle {
-  transform: none;
+.open { 
+
+	.nav-toggle {
+		transform: none;
+	}
+  	.b{
+  	opacity: 0;
+  }
 }
 
-.hidden_1 {
-  width: 80px;
-  float: left;
-  fill: white;
-  border: 1px solid #020202;
-}
+
 
 .menu {
-  margin-top: 60px;
-  background-color: red;
+  margin-top: 0;
+  
   ul {
 	  margin: 0;
 	   list-style: none;
@@ -372,7 +372,7 @@ span:nth-child(2) {
 	 ul li a:hover {
 
 	 color: green;
-	 background-color: #6b6868;
+	 background-color: black;
 	 }
 }
 .side-navigation{
@@ -384,22 +384,22 @@ span:nth-child(2) {
     right: 0;
 }
 /* Navigation Menu*/
-.navigation {
+// .navigation {
 
-  width: 80px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 11000;
-
-
-  list-style: none;
-  background: #1D1B1F;
+//   width: 80px;
+//   height: 100%;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 11000;
 
 
-  padding-top: 0px;
-}
+//   list-style: none;
+//   background: #1D1B1F;
+
+
+//   padding-top: 0px;
+// }
 
 
 

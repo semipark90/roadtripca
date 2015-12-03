@@ -1,0 +1,88 @@
+/* http://demos.uilang.com */
+b {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+  box-sizing: border-box;
+  padding: 11px 0 0 9px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,40,60,.2);
+  tap-highlight-color: transparent;
+
+}
+span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: rgb(0,40,60);
+  transition: .7s;
+  pointer-events: none;
+}
+span:nth-child(2) {
+  margin: 3px 0;
+}
+.open {
+  border-color: rgba(255,255,255,.2);
+}
+.open span {
+  background: #fff;
+}
+.open :first-child {
+  transform: translateY(5px) rotate(-45deg);
+}
+.open :nth-child(2) {
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+.open :last-child {
+  transform: translateY(-5px) rotate(-135deg);
+}
+.nav {
+  position: fixed;
+  width: 83px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(0,40,60);
+  transform: translateX(-100%);
+  transition: .5s;
+}
+.open + .nav {
+  transform: none;
+}
+
+.hidden {
+  width: 80px;
+  fill: white;
+  border: 1px solid #020202;
+}
+
+.menu {
+  margin-top: 60px;
+  /*background-color: red;*/
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding-top: 0;
+  font-size: 20px;
+  color: white; 
+
+}
+ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+ul li a:hover {
+
+color: green;
+background-color: #6b6868;
+}
