@@ -1,0 +1,118 @@
+
+.hover {
+	position: relative;
+				 
+
+}
+.hover:hover {
+	/*thumnails hover effect and animations*/	 
+	img {
+		/* transform:        scale(1.1,1.1); /* CSS3 * */
+ 	/*-moz-transform:     scale(1.1,1.1);/* Firefox */
+ 	/*-webkit-transform:  scale(1.1,1.1); /* Webkit */
+ 	/*-o-transform:       scale(1.1,1.1); /* Opera */
+	 /*-ms-transform:     scale(1.1,1.1);*/
+	 -webkit-transition: all 0.6s ease-out;
+	-moz-transition: all 0.6s ease-out;
+	-o-transition: all 0.6s ease-out;
+	transition: all 0.6s ease-out; 
+	filter: blur(3px);
+  -webkit-filter: blur(3px);
+   -moz-filter: blur(3px);
+    -ms-filter: blur(3px);
+     -web-filter: blur(3px);
+	}
+	.thum-hover {
+		opacity: 1;
+		z-index: 1;
+		top:0;
+		background-color: rgba(241, 110, 72, 0.7);
+		min-height: 100%;
+		 -webkit-transition: opacity 0.5s ease-in-out;
+  	  	-moz-transition: opacity 0.5s ease-in-out;
+   	 	-ms-transition: opacity 0.5s ease-in-out;
+    	-o-transition: opacity 0.5s ease-in-out;
+
+		
+	}
+	.thum-hovertwo {
+			opacity: 1;
+		z-index: 1;
+		top:0;
+		background-color: rgba(129, 207, 215, 0.7);
+		min-height: 100%;
+		 -webkit-transition: opacity 0.5s ease-in-out;
+  	  	-moz-transition: opacity 0.5s ease-in-out;
+   	 	-ms-transition: opacity 0.5s ease-in-out;
+    	-o-transition: opacity 0.5s ease-in-out;
+
+	}
+	.line {
+		width:40%;
+		opacity: 1;
+		/*this one is line effect*/
+	}
+	h2 {
+		 transform:         translate(0, 10px); /* CSS3 */
+ 	-moz-transform:    translate(0,10px); /* Firefox */
+ 	-webkit-transform: translate(0,10px); /* Webkit */
+ 	-o-transform:      translate(0,10px); /* Opera */
+	 -ms-transform:     translate(0,10px);
+	 -webkit-transition: all 0.6s ease-out;
+	-moz-transition: all 0.6s ease-out;
+	-o-transition: all 0.6s ease-out;
+	transition: all 0.6s ease-out; 
+	/*this one is headline drop animation*/
+	}
+	p {
+		opacity: 1;
+		 -webkit-transition: opacity 0.6s ease-in-out;
+  	  	-moz-transition: opacity 0.6s ease-in-out;
+   	 	-ms-transition: opacity 0.6s ease-in-out;
+    	-o-transition: opacity 0.6s ease-in-out;
+    	/*subheadlines opacity animation*/
+	}
+
+}
+
+
+
+
+.thum-hover, .thum-hovertwo {
+	position: absolute;
+	opacity:0;
+	/* -webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out; */
+	/*  -webkit-transition: all 0.5s ease-in-out;
+  	 -moz-transition: all 0.5s ease-in-out;
+   	 -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out; */
+	text-align: center;
+	padding-top: 3em;
+	
+	h2 {
+		color: white;
+		font-size: 2em;
+			}
+	p {
+		color: white;
+		font-size:1.1em;
+		padding: 0.5em;
+		opacity: 0;
+	}
+/*Thumnails hover*/
+}
+
+/*line effect*/
+.line {
+	height:2px;
+					 width:0%;
+					 margin:15px auto;
+					 background-color:#ffffff;
+					-webkit-transition: all 500ms ease-out;
+					-moz-transition: all 500ms ease-out;
+					-o-transition: all 500ms ease-out;
+					transition: all 500ms ease-out;	
+}
