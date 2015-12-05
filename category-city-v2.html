@@ -7,8 +7,8 @@
 	<!-- Typekit font - Museo Slab for Headline & Museo Sans Rounded for bodycopy -->
 	<script src="https://use.typekit.net/dbk3mqr.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	<script src="js/b.js">
-	</script>
+	<!-- <script src="js/b.js">
+		</script> -->
 
 	<!-- Google fonts for secondary uses. Arvo for headline & Nuneto for bodycopy -->
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
@@ -25,7 +25,7 @@
 <body>
 	<!-- Codrops code: http://tympanus.net/codrops/2013/05/02/fixed-background-scrolling-layout/ -->
 	<div class="toggle-main">
-		<b href=#>
+		<b href="#" class="b">
 		  <span></span>
 		  <span></span>
 		  <span></span>
@@ -33,7 +33,7 @@
 		<div class="nav-toggle">
 			<div class="menu">
 				<ul>
-					<li class="hidden_1"><a href="#"><img src="img/a.svg"></a></li>
+					<li class="hidden_1"><a href="#">Home</a></li>
 					<li class="hidden_1"><a href="#"><img src="img/b.svg"></a></li>
 					<li class="hidden_1"><a href="#"><img src="img/c.svg"></a></li>
 					<li class="hidden_1"><a href="#"><img src="img/a.svg"></a></li>
@@ -46,10 +46,12 @@
 			</div><!-- .menu -->
 		</div><!-- .nav-toggle -->
 	</div><!-- .toggle-main -->
-	<code>
+	<!-- <code>
   	clicking on "b" toggles class "open" on "b"
-	</code>
-
+	</code> -->
+	<div class="transparent-overlay">
+		
+	</div><!-- .transparent-overlay -->
 	<div id="cbp-fbscroller" class="cbp-fbscroller">
 	
 		<nav>
@@ -72,7 +74,6 @@
 			    </p>
 			  </div>
 			</div>
-
 		</section>
 		<section id="ctsection2">
 			<div class="Pop-trigger v-center">
@@ -86,8 +87,6 @@
 			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. Praesent at justo at lectus scelerisque mollis. Mauris molestie mattis tellus ut facilisis. Sed vel ligula ornare, posuere velit ornare, consectetur erat.</p>
 			  </div>
 			</div>
-			
-			
 		</section>
 		<section id="ctsection3">
 			<div class="Pop-trigger v-center">
@@ -101,7 +100,6 @@
 			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. Praesent at justo at lectus scelerisque mollis. Mauris molestie mattis tellus ut facilisis. Sed vel ligula ornare, posuere velit ornare, consectetur erat.</p>
 			  </div>
 			</div>
-			
 		</section>
 		<section id="ctsection4">
 			<div class="Pop-trigger v-center">
@@ -145,14 +143,31 @@
 		<!-- Codrops Javascript for fixed background parallax -->
 		<script src="js/cbpFixedScrollLayout.min.js"></script>
 		<script>
+			// $(function() {
+			// 	cbpFixedScrollLayout.init();
+			// 	$(".b").on("click",function(e){
+			// 		e.preventDefault();
+			// 		$("body").addClass("open");
+			// 	});
+			// 	$(".cbp-fbscroller").on("click",function(){
+			// 		if($("body").hasClass("open")) $("body").removeClass("open");
+			// 	})
+			// });
 			$(function() {
 				cbpFixedScrollLayout.init();
+				$(".b").on("click",function(e){
+					e.preventDefault();
+					$("body").addClass("open");
+				});
+				$(".cbp-fbscroller, .transparent-overlay").on("click",function(){
+					if($("body").hasClass("open")) $("body").removeClass("open");
+				})
 			});
 		</script>
-		<script src="js/classie.js"></script>
-		<script src="js/sidebarEffects.js"></script>
-		<script src="js/modal.js"></script>
 
-		
+		<script src="js/modal.js"></script>
+		<!-- <script src="js/classie.js"></script>
+		<script src="js/sidebarEffects.js"></script>
+		-->
 </body>
 </html>
