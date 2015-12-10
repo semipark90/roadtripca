@@ -1,6 +1,6 @@
 $(function(){
 
-var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
+var appendthis =  $("<div class='modal-overlay js-modal-close'></div>");
 
   $('a[data-modal-id]').click(function(e) {
     e.preventDefault();
@@ -12,7 +12,8 @@ var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
   });  
   
   
-$(".js-modal-close, .modal-overlay").click(function() {
+$(".js-modal-close, .modal-overlay").click(function(e) {
+    e.preventDefault();
     $(".modal-box, .modal-overlay").fadeOut(500, function() {
         $(".modal-overlay").remove();
     });
