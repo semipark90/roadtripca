@@ -49,7 +49,9 @@
 	<!-- <code>
   	clicking on "b" toggles class "open" on "b"
 	</code> -->
-	<div class="transparent-overlay"></div>
+	<div class="transparent-overlay">
+		
+	</div><!-- .transparent-overlay -->
 	<div id="cbp-fbscroller" class="cbp-fbscroller">
 	
 		<nav>
@@ -66,12 +68,6 @@
 		<section id="ctsection5"></section>
 	</div>
 
-
-
-	<!-- <div class="transparent-overlay"></div> -->
-
-
-
 	<!-- Bootstrap Javascript from CDN -->
 	<!-- Jquery is necessary before using javascript for bootstrap -->
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -86,6 +82,16 @@
 		<!-- Codrops Javascript for fixed background parallax -->
 		<script src="js/cbpFixedScrollLayout.min.js"></script>
 		<script>
+			// $(function() {
+			// 	cbpFixedScrollLayout.init();
+			// 	$(".b").on("click",function(e){
+			// 		e.preventDefault();
+			// 		$("body").addClass("open");
+			// 	});
+			// 	$(".cbp-fbscroller").on("click",function(){
+			// 		if($("body").hasClass("open")) $("body").removeClass("open");
+			// 	})
+			// });
 			$(function() {
 				cbpFixedScrollLayout.init();
 				$(".b").on("click",function(e){
