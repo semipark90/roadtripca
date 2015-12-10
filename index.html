@@ -19,7 +19,9 @@
 	<!-- these is the optional bootstrap theme cdn -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/font-awesome-animation.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+
 
 </head>
 <body>
@@ -44,6 +46,10 @@
 		<h1>Roadtrip California</h1>
 		<p>Endless sunshine, amazing cities, best-in-class theme parks and incredible natural treasures</p>	
 	</div>
+	<!--This part is icon moving--> 
+ <a class="moving-arrow" href="#travel-category">
+ 	<div class="icon faa-float animated"><i class="fa fa-angle-double-down"></i></div>
+ </a>
 </section>
 <!-- Category Section -->
 <div id="travel-category">
@@ -256,14 +262,27 @@
     <div class="overlayheadlines">
     	<div class="headlines">
     		<div class="container">
-    			<h2>Explore the wild adventure of California Roadtrip</h2>
+    			<!-- <h2>Explore the wild adventure of California Roadtrip</h2> -->
+    			<!-- <section class="cd-intro"> -->
+				<h1 class="cd-headline rotate-1">
+					<span>Enjoy the adventure of California</span>
+					<span class="cd-words-wrapper">
+						<b class="is-visible">Beaches</b>
+						<b>Cities</b>
+						<b>Food</b>
+						<b>Wine</b>
+					</span>
+				</h1>
+				<!-- </section> --> <!-- cd-intro -->
     		</div>
     	</div>
     </div>
 </section>
 <!-- Map Section -->
 <div id="cali-map">
-	
+	<div class="container">
+		<img src="img/map-01.png" class="img-responsive" alt="california map">
+	</div>
 </div>
 <!-- footer section -->
 <footer>
@@ -297,6 +316,6 @@ if($(window).width() > 599 && !isIEOld && !isiPad) {
 
 $('.video').prepend(el);
 </script>
-
+<script src="js/text-effect.js"></script>
 </body>
 </html>
