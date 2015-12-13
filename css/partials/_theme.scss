@@ -656,3 +656,28 @@ svg:hover path {
 a.moving-arrow{
 	color:white;
 }
+
+// show more
+
+.show-more {
+	float: left;
+	width: 120px;
+	background-color: $blush;
+	text-align: center;
+	padding: 2em;
+	letter-spacing: 1px;
+	cursor:pointer;
+	a{
+		color: #fff;
+		padding: 15px;
+		font-size: 1.5em;
+		display: inline-block;
+		&:hover{
+		text-decoration: none;
+		}
+	}
+
+
+}
+
+

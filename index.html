@@ -147,7 +147,7 @@
 
 
 
-
+		
 			<div class="category-thumb col-lg-4 col-md-6 col-sm-6">
 				
 				<div class="hover">
@@ -164,9 +164,12 @@
 				</a>
 			</div>
 
+		<!-- 	show-hidden categories -->
+		<div class="show-more"><a>+</a></div>
 
+		<div id ="grid2" class="hidden">
 
-			<div class="category-thumb col-lg-4 col-md-6 col-sm-6">
+		<div class="category-thumb col-lg-4 col-md-6 col-sm-6">
 				
 				<div class="hover">
 					<a href="#">
@@ -256,6 +259,10 @@
 				</div>
 				</a>
 			</div>
+			
+		</div><!-- close .hidden -->
+
+			
 	</div> <!-- close .row -->
 </div><!-- close travel-categoty -->
 
@@ -289,6 +296,7 @@
 <footer>
 	<p>WNM 499 Final project. Designed and developed by Sai, Sammy, Chrys and Nabanita. All rights reserved.</p>
 </footer>
+
 <!-- Bootstrap Javascript from CDN -->
 <!-- Jquery is necessary before using javascript for bootstrap -->
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -318,5 +326,7 @@ if($(window).width() > 599 && !isIEOld && !isiPad) {
 $('.video').prepend(el);
 </script>
 <script src="js/text-effect.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
