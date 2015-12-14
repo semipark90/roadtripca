@@ -103,11 +103,7 @@
 .modal-overlay {
   opacity: 0;
   filter: alpha(opacity=0);
-<<<<<<< HEAD
-  position: absolute;
-=======
   position: fixed;
->>>>>>> a0ad12fc13167a4dab5d5d78d5c66f94b578d1f0
   top: 0;
   left: 0;
   z-index: 900;
