@@ -325,7 +325,7 @@ footer {
   width: /* 80px; */ 100%; //*Icons hover effects from semi*//
   float: left;
   fill: white;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid  rgba(255, 255, 255, 0.1);
 }
 
 
@@ -336,7 +336,8 @@ footer {
   top: 0;
   bottom: 0;
   left: 0;
-  background: rgb(0,40,60);
+  // background: rgb(0,40,60);
+  background: darken($midblue, 20%);
   transform: translateX(-100%);
   transition: .5s;
 }
@@ -362,7 +363,7 @@ footer {
 	 }
 
 	 li {
-   padding-top: 0;
+   	padding-top: 0;
 	  font-size: 20px;
 	  color: white; 
 
@@ -374,9 +375,16 @@ footer {
 
 	 ul li a:hover {
 
-	 color: green;
-	 background-color: black;
+	 // color: white;
+	 background-color: darken($deepblue, 15%);
 	 }
+	 .home{
+	  	background-color: $blush;
+	  	a:hover{
+	  		background-color: #914146;
+	  	}
+	  }
+	 
 }
 .side-navigation{
 	width: 80px;
