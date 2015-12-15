@@ -1,0 +1,61 @@
+.gradient-1 {
+	height: 100%;
+	background: linear-gradient(270deg, rgba(36, 87, 114, 0.3), rgba(241, 110, 72, 0.3));
+	background-size: 400% 400%;
+	-webkit-animation: AnimationName 5s ease infinite;
+	-moz-animation: AnimationName 5s ease infinite;
+	-o-animation: AnimationName 5s ease infinite;
+	animation: AnimationName 5s ease infinite;
+
+}
+.gradient-2 {
+	height: 100%;
+	background: linear-gradient(316deg, rgba(220, 104, 111, 0.3), rgba(129, 207, 215, 0.3));
+	background-size: 400% 400%;
+	-webkit-animation: AnimationName 5s ease infinite;
+	-moz-animation: AnimationName 5s ease infinite;
+	-o-animation: AnimationName 5s ease infinite;
+	animation: AnimationName 5s ease infinite;
+
+}
+
+.gradient-3 {
+	height: 100%;
+	background: linear-gradient(316deg, rgba(220, 104, 111, 0.3), rgba(95, 147, 114, 0.3));
+	background-size: 400% 400%;
+	-webkit-animation: AnimationName 5s ease infinite;
+	-moz-animation: AnimationName 5s ease infinite;
+	-o-animation: AnimationName 5s ease infinite;
+	animation: AnimationName 5s ease infinite;
+
+}
+.gradient-4 {
+	height: 100%;
+	background: linear-gradient(316deg, rgba(220, 104, 111, 0.3), rgba(95, 147, 114, 0.3));
+	background-size: 400% 400%;
+	-webkit-animation: AnimationName 5s ease infinite;
+	-moz-animation: AnimationName 5s ease infinite;
+	-o-animation: AnimationName 5s ease infinite;
+	animation: AnimationName 5s ease infinite;
+
+}
+	@-webkit-keyframes AnimationName {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	@-moz-keyframes AnimationName {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	@-o-keyframes AnimationName {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	@keyframes AnimationName {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
