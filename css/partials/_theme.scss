@@ -5,6 +5,8 @@ body{
 	font-family: $textFont;
 	color: $slate;
 	font-size: $normaltext;
+	font-weight: 300;
+	letter-spacing: 1px;
 	overflow-x: hidden;
 	text-rendering: optimizelegibility;
 	 -moz-font-feature-settings: "kern" 1;
@@ -549,7 +551,7 @@ label[for="nav-trigger"] {
 
 #big-video {
     position: relative;
-    background: #000;
+    background: $cream;
     overflow: hidden;
     @media (min-width: 1200px){
     	min-height: 720px;
